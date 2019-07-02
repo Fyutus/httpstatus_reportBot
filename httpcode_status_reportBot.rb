@@ -1,11 +1,11 @@
 require 'net/http'
 require 'slack-ruby-client'
 
-managed_site_uri = {"筑豊ゼミ" => "https://chikuzemi.com",
-                       "NPO法人_住学生共同機構筑豊地域づくりセンター" => "https://chikuhou-jugaku-wp.org"}
+managed_site_uri = {"site_name1" => "site_url1",
+                       "site_name2" => "site_url2"}
 #---------------------Slack_Api-----------------
 Slack.configure do |conf|
-  conf.token = 'xoxb-388118825495-676172479377-sbf0Sg4PoZPCggX283kb0Zhp'
+  conf.token = 'XXXXXXXXXXXXXXXXXXXXXXXX'
 end
 
 client = Slack::RealTime::Client.new
